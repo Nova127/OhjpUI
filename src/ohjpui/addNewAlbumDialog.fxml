@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane  xmlns:fx="http://javafx.com/fxml" fx:controller="ohjpui.AddNewAlbumDialogController" 
+            style="-fx-background-color: lightgrey;" hgap="10" vgap="10"   >
+    
+    <padding><Insets top="10" right="10" bottom="10" left="10" /></padding>
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT"  percentWidth="25" /> 
+    </columnConstraints>
+    
+    <Label text="%albumTitleLabel" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Label text="%albumDisplayTitleLabel" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label text="%albumAlternateTitleLabel" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label text="%albumCatalogNumberLabel" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <Label text="%albumBarCodeLabel" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Label text="%albumAlbumTypeLabel" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <Label text="%albumAlbumReleaseLabel" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <Label text="%albumOrgYearLabel" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <Label text="%albumCurYearLabel" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+    <Label text="%albumAlbumMediaLabel" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+    <Label text="%albumDiscsLabel" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+    <Label text="%albumStyleKeyLabel" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+    <Label text="%albumRatingLabel" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+    <Label text="%commentLabel" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+    
+    <TextField fx:id="titleTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <TextField fx:id="displayTitleTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField fx:id="alternateTitleTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <TextField fx:id="catalogNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <TextField fx:id="barCodeTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <ComboBox fx:id="typeComboBox" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <ComboBox fx:id="releaseComboBox" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <TextField fx:id="orgYearTextField" GridPane.columnIndex="1" GridPane.rowIndex="7"  />
+    <TextField fx:id="curYearTextField" GridPane.columnIndex="1" GridPane.rowIndex="8" />      
+    <ComboBox fx:id="mediaComboBox" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+    <TextField fx:id="discsTextField" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+    <ComboBox fx:id="styleKeyComboBox" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+    <ComboBox fx:id="ratingComboBox" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+    <TextArea fx:id="albumCommentTextArea" GridPane.columnIndex="1" GridPane.rowIndex="13" prefHeight="80"  />
+    
+</GridPane>

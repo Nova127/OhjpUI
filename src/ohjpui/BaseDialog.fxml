@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.layout.BorderPane"  prefWidth="750.0" minHeight="400"  xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: lightgrey;">
+    <center>
+<!--        <Region ></Region>-->
+<!--            <fx:include source="addNewAlbumDialog.fxml"/>     -->
+    </center>
+    <bottom>
+        <HBox alignment="CENTER"  style="-fx-padding: 8;" spacing="5" >
+<!--            <Button fx:id="backButton" text="Back" onAction="#handleButton" />
+            <Button fx:id="nextButton" text="Next" onAction="#handleButton"  />-->
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="okButton" text="OK" onAction="#accept"  />
+            <Button fx:id="cancelButton" text="Cancel" onAction="#reject"  />
+        </HBox>
+    </bottom>
+</fx:root>
